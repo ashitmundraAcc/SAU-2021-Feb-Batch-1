@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "578ecc6f-cb01-4d50-809f-c998d0dd2c4c",
+		"name": "Assignmentpart2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "posting data",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"goals\": 15,\n  \"id\": \"CR7\",\n  \"name\": \"Ronaldo\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/football",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posting another data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"goals\": 8,\n  \"id\": \"LM10\",\n  \"name\": \"Messi\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/football",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getting players more than 10 goals",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/football/allTop/top",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football",
+						"allTop",
+						"top"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Searching Player by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/football/LM10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football",
+						"LM10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

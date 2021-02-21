@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "68860a9d-ccd5-4419-8280-723d55549fc2",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "posting Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"city\": [\n    \"313301\", \"313001\", \"313002\"\n  ],\n  \"id\": \"1\",\n  \"name\": \"Avengers\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posing another Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"city\": [\n    \"313301\", \"4001\", \"4002\"\n  ],\n  \"id\": \"2\",\n  \"name\": \"Batman\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add another Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"city\": [\n    \"313\"\n  ],\n  \"id\": \"101\",\n  \"name\": \"Dark Knight\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie by city name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/bms/city/313301",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"city",
+						"313301"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/bms/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Movie by name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/bms/movie/Avengers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"movie",
+						"Avengers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
